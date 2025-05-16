@@ -35,7 +35,7 @@ request = youtube.search().list(
 )
 response = request.execute()
 
-print("🎥 Top YouTube Results:")
+print("Top YouTube Results:")
 for item in response["items"]:
     video_id = item["id"]["videoId"]
     title = item["snippet"]["title"]
